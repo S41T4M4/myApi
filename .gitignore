@@ -1,0 +1,13 @@
+# Ignorar diretórios de build
+bin/
+obj/
+Storage/
+
+# Ignorar arquivos de usuário e configurações locais
+*.csproj.user
+
+# Ignorar arquivos de configuração de ambiente de desenvolvimento
+appsettings.Development.json
+
+# Ignorar outras pastas e arquivos temporários
+*.log

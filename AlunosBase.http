@@ -1,0 +1,6 @@
+@AlunosBase_HostAddress = http://localhost:5119
+
+GET {{AlunosBase_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
