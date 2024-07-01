@@ -20,12 +20,5 @@ namespace AlunosBase.Infraestrutura
                     "Password=Staff4912;");
             }
         }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<TurmaA>().ToTable("turmaa");
-            modelBuilder.Entity<TurmaB>().ToTable("turmab");
-            modelBuilder.Entity<TurmaC>().ToTable("turmac");
-        }
     }
 }

@@ -19,7 +19,7 @@ builder.Services.AddControllers();
 builder.Services.AddApiVersioning(o =>
 {
     o.AssumeDefaultVersionWhenUnspecified = true;
-    o.DefaultApiVersion = new ApiVersion(1, 0);
+    o.DefaultApiVersion = new ApiVersion(2, 0);
 });
 
 builder.Services.AddVersionedApiExplorer(setup =>
@@ -42,7 +42,7 @@ builder.Services.AddCors(options =>
         builder =>
         {
             builder.WithOrigins("http://localhost:8081", "https://relatorio-notas.vercel.app")
-                   .AllowAnyHeader()
+                   .AllowAnyHeader() 
                    .AllowAnyMethod();
         });
 });

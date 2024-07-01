@@ -26,6 +26,7 @@ namespace Alunos.Controllers
         {
             try
             {
+
                 var turmaA = new TurmaA
                 {
                     nometurma = turmaAViewModel.NomeTurma,
@@ -40,6 +41,7 @@ namespace Alunos.Controllers
                     educacaofisica = turmaAViewModel.EducacaoFisica,
 
                 };
+
 
                 _alunosRepository.AddTurmaA(turmaA);
 
